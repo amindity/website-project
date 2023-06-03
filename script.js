@@ -2,6 +2,7 @@ let sections = document.querySelectorAll("section")
 let navlink = document.querySelectorAll('header nav a')
 let header = document.querySelector('.header')
 
+
 window.onscroll = ()=>{
   sections.forEach(sec =>{
     let top = window.scrollY ;
@@ -18,4 +19,11 @@ window.onscroll = ()=>{
   })
 
   header.classList.toggle('active' , window.scrollY > 100)
+}
+
+let menuIcon = document.querySelector("#menu-icon")
+let navbar = document.querySelector(".navbar")
+
+menuIcon.onclick = () =>{
+  navbar.classList.toggle("active")
 }
