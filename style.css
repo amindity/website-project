@@ -380,6 +380,9 @@ span {
 }
 
 /* contact  */
+.contact {
+  margin-bottom: 4rem;
+}
 form {
   max-width: 70rem;
   margin: 0 auto ;
@@ -440,6 +443,61 @@ form .textarea-field {
 
 form .textarea-field textarea {
   resize: none;
+}
+
+/* footer  */
+.footer {
+  background: var(--second-bg-color);
+  width: 100%;
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 1.7rem;
+}
+
+.footer .icon {
+  background: var(--main-color);
+  width: 40px;
+  height: 40px;
+  border-radius: .6rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: .4s ease;
+  border: .2rem solid var(--main-color);
+}
+
+.footer .icon i{
+  font-size: 2.5rem;
+  color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer .icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--bg-color);
+  z-index: -1;
+  transition: .5s ease;
+}
+
+.footer .icon:hover::before {
+  width: 100%;
+}
+
+.footer .icon:hover i{
+  color: var(--main-color);
 }
 
 
