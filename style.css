@@ -198,6 +198,7 @@ span {
   border-bottom: .2rem solid var(--second-bg-color);
   border-left: .2rem solid var(--main-color);
   border-right: .2rem solid var(--main-color);
+  animation: circle 4s linear infinite;
 }
 
 .about h2 {
@@ -499,6 +500,32 @@ form .textarea-field textarea {
 .footer .icon:hover i{
   color: var(--main-color);
 }
+
+/* animation img home  */
+.pop {
+  animation: pop 4s linear infinite;
+}
+
+@keyframes pop {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* animation img about  */
+@keyframes circle {
+  100%{
+    transform: translate(-50% , -50%) rotate(360deg);
+  }
+}
+
+
 
 
 
