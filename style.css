@@ -163,6 +163,7 @@ img {
 .heading {
   font-size: 4.5rem;
   text-align: center;
+  margin-bottom: 3rem;
 }
 span {
   color: var(--main-color);
@@ -306,6 +307,80 @@ span {
 .education-column:nth-child(2) .education-box .progres:nth-child(3) .circle-box .circle {
   width: 98%;
 }
+
+/* portfolio */
+.portfolio {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  background: var(--second-bg-color);
+}
+.portfolio-column {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
+.portfolio-box {
+  border-radius: 10%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-box img {
+  transition: .5s ease;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-box .text-portfolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+  padding: 0 2rem;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,.1) , var(--main-color));
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+
+.portfolio-box:hover .text-portfolio{
+  transform: translateY(0);
+}
+
+.text-portfolio h1 {
+  font-size: 3rem;
+}
+
+.text-portfolio p {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+
+.text-portfolio .icon {
+  font-size: 1.5rem;
+  background: var(--text-color);
+  color: var(--bg-color);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 
 
