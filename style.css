@@ -525,8 +525,7 @@ form .textarea-field textarea {
   }
 }
 
-
-
-
-
-
+.header.active {
+  transition: .5s ease;
+  background: var(--bg-color);
+}
